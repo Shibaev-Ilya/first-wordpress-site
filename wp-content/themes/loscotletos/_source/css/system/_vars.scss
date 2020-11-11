@@ -1,0 +1,47 @@
+//===Typo==========================
+$font_base: Georgia, serif;
+$font_accent: 'PermanentMarker-Regular', $font_base;
+//=================================
+
+//===Colors========================
+$color_white: #FFF;
+$color_black: #000;
+
+$primary-color-dark: #303F9F;
+$primary-color: #3F51B5;
+$primary-color-light: #C5CAE9;
+$primary-color-text: #FFFFFF;
+$accent-color: #448AFF;
+$primary-text-color: #212121;
+$secondary-text-color: #757575;
+$divider-color: #BDBDBD;
+//=================================
+
+//===Container=====================
+$container: (
+	desktop: 1920px,
+	laptop: 1366px,
+	tablet: 1024px,
+	mobile: 768px
+);
+$containerMaxWidth: 1300px;
+$max-width: 1920px;
+//=================================
+
+//===Breaks========================
+$breaks: (
+	desktop: 1920px,
+    desktop_md: 1800px,
+    desktop_sm: 1600px,
+    desktop_xs: 1440px,
+	laptop: 1280px,
+    laptop_md: 1200px,
+	tablet: 1023px,
+	mobile: 767px,
+	mobile_md: 576px,
+	mobile_sm: 480px,
+	mobile_xs: 375px
+);
+
+//===Transition=====================
+$transition: all 0.3s ease-in-out;

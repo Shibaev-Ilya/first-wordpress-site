@@ -1,0 +1,31 @@
+.preview_card {
+  display: flex;
+  flex-direction: column;
+  column-gap: 20px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 20px 0 #c7c7c7;
+  &__img {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  &__text {
+    padding: 0 25px;
+  }
+  &__text__text {
+    margin-top: 30px;
+  }
+  &__text__buttons {
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    .arrow {
+      width: 15px;
+      height: 100%;
+      margin-left: 10px;
+    }
+  }
+}

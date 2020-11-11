@@ -1,0 +1,16 @@
+//Default styles
+@import 'system/normalize';
+
+//Vars
+@import 'system/mixins';
+@import 'system/fonts';
+@import 'system/vars';
+
+//Components
+@import 'content/main.scss';
+@import 'content/main-page.scss';
+@import 'content/header.scss';
+@import 'content/footer.scss';
+@import 'content/glitch.scss';
+@import 'content/preview_card.scss';
+@import 'content/jq-page.scss';

@@ -1,0 +1,115 @@
+@mixin ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+@mixin object-cover {
+    font-family: 'object-fit: cover;';
+}
+
+@mixin placeholder {
+    &::-webkit-input-placeholder {
+        @content;
+    }
+    &:-moz-placeholder {
+        @content;
+    }
+    &::-moz-placeholder {
+        @content;
+    }
+    &:-ms-input-placeholder {
+        @content;
+    }
+}
+
+@function svg($svg, $fill: null) {
+    $svg: if($fill, str-replace($svg, '<svg', "<svg fill='#{$fill}'"), $svg);
+    /*
+    $svg: str-replace($svg, "<svg", "<svg xmlns='http://www.w3.org/2000/svg' ");
+    */
+    $svg: str-replace($svg, '<', '%3C');
+    $svg: str-replace($svg, '>', '%3E');
+    $svg: str-replace($svg, '"', "'");
+    $svg: str-replace($svg, '#', '%23');
+    $svg: str-replace($svg, '&', '%26');
+
+    @return url('data:image/svg+xml,#{$svg}');
+}
+
+
+@function str-replace($string, $search, $replace: "") {
+    $index: str-index($string, $search);
+
+    @if $index {
+        @return str-slice($string, 1, $index - 1)+$replace+str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+    }
+
+    @return $string;
+}
+
+@mixin font-face($name, $path, $weight: null, $style: null, $exts: eot woff2 woff ttf svg) {
+    $src: null;
+
+    $extmods: (eot: "?",
+        svg: "#"+ str-replace($name, " ", "_"));
+
+    $formats: (otf: "opentype",
+        ttf: "truetype"
+        );
+
+    @each $ext in $exts {
+        $extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext);
+        $format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
+        $src: append($src, url(quote($path + "." + $extmod)) format(quote($format)), comma);
+    }
+
+    @font-face {
+        font-family: quote($name);
+        font-display: swap;
+        font-style: $style;
+        font-weight: $weight;
+        src: $src;
+    }
+}
+
+@function breakpoint-em($val) {
+    $res: $val / $font_baseSize * 1em;
+    @return $res;
+}
+
+@mixin above($width) {
+    @media screen and (min-width: breakpoint-em($width)) {
+        @content;
+    }
+}
+
+@mixin below($width) {
+    @media screen and (max-width: breakpoint-em($width)) {
+        @content;
+    }
+}
+
+@mixin aboveLandscape ($width, $orientation: 'width') {
+    @media screen and (min-#{$orientation}: breakpoint-em($width)) and (orientation: landscape) {
+        @content;
+    }
+}
+
+@mixin belowLandscape($width, $orientation: 'width') {
+    @media screen and (max-#{$orientation}: breakpoint-em($width)) and (orientation: landscape) {
+        @content;
+    }
+}
+
+@mixin between($minWidth, $maxWidth) {
+    @media screen and (min-width: breakpoint-em($minWidth)) and (max-width: breakpoint-em($maxWidth)) {
+        @content;
+    }
+}
+
+@mixin dpr($minResolutionDpi: 144dpi, $minResolutionDpx: 1.5dppx) {
+    @media screen and (min-resolution: $minResolutionDpi), (min-resolution: $minResolutionDpx) {
+        @content
+    }
+}

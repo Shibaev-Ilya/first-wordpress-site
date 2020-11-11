@@ -1,0 +1,18 @@
+# humanstxt.org/
+
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Ilya Shibaev and his cat Cotleta
+
+# THANKS
+
+    Thanks my mom
+
+# TECHNOLOGY COLOPHON
+
+    colophonis a description of the tools, systems and resources used to create the Web site and keep it operational.
+
+    CSS3, HTML5
+    Apache Server Configs, jQuery, Modernizr, Normalize.css
