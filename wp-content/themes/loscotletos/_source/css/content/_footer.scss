@@ -9,12 +9,12 @@ footer {
 .footer__info {
   border-top: 1px solid $color_black;
   padding: 0 25px;
+  border-bottom: 1px solid $divider-color;
 }
 ul.footer__social {
   padding: 0;
   display: flex;
   justify-content: center;
-  border-top: 1px solid $divider-color;
   li {
     text-transform: uppercase;
     font-family: $font_accent;

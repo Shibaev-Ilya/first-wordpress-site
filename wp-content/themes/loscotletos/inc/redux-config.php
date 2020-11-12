@@ -318,7 +318,7 @@ Redux::set_help_sidebar( $opt_name, $content );
  * ---> START SECTIONS
  */
 
-// -> START Header Fields
+// -> START Main info settings
 Redux::set_section(
     $opt_name,
     array(

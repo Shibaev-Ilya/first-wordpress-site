@@ -13,6 +13,7 @@ get_header();
 	<main>
         <section>
             <h3>Это single.php -> Posts</h3>
+            <?php echo get_breadcrumbs(); ?>
         <?php
         while ( have_posts() ) :
             the_post();

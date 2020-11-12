@@ -23,7 +23,7 @@ html {
 
 body {
   line-height: 1.6em;
-  font-family: Georgia, serif;
+  font-family: OpenSans-Regular, sans-serif;
   margin: 0;
   height: 100%;
 }
@@ -352,4 +352,8 @@ template {
 
 [hidden] {
   display: none;
+}
+
+p {
+  margin: 0;
 }
