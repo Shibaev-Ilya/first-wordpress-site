@@ -13,5 +13,7 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 ?>
 
 <section class="right_column widget-area">
-    <?php dynamic_sidebar( 'sidebar-1' ); ?>
+    <div class="container_sticky">
+        <?php dynamic_sidebar( 'sidebar-1' ); ?>
+    </div>
 </section>

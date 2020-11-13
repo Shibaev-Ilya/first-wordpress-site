@@ -34,10 +34,10 @@ get_header();
                     </div>
                 </div>
             </section>
-            <section class="contacts__sidebar widget-area">
+            <section class="contacts__form widget-area">
                 <div class="preview_card">
                     <div class="preview_card__text">
-                        <div class="contacts__sidebar__title">Форма обратной связи</div>
+                        <div class="contacts__form__title">Форма обратной связи</div>
                         <?php
                         $contacts_form = get_post_meta(get_the_ID(), 'ale_formcode', true);
                         echo do_shortcode($contacts_form);

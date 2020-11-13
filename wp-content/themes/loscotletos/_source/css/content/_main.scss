@@ -2,7 +2,6 @@ body, a {
   color: $primary-text-color;
 }
 .container {
-  height: 100%;
   max-width: 1024px;
   margin: 0 auto;
   padding: 0 25px;
@@ -12,9 +11,12 @@ body, a {
 }
 
 .main_page_wrapper {
-  min-height: 100%;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  grid-template-columns: 1fr;
-  grid-row-gap: 25px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+}
+
+.container_sticky {
+  position: sticky;
+  top: 25px;
 }

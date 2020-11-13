@@ -15,7 +15,16 @@ $main_title = $redux_loscotletos['lc-header-title'];
 ?>
     <footer>
         <div class="footer__info">
-            <p><?= $main_title ?></p>
+            <p class="footer__info__title"><?= $main_title ?></p>
+            <?php
+            wp_nav_menu(
+                array(
+                    'theme_location' => 'footer-useful-links-menu',
+                    'container' => 'ul',
+                    'menu_class' => 'footer__useful-links',
+                )
+            );
+            ?>
         </div>
         <?php
         wp_nav_menu(

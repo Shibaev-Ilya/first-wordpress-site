@@ -1,7 +1,7 @@
-.lc-contacts-input {
+input, textarea {
+  margin-top: 6px;
   display: block;
   width: calc(100% - 26px);
-  height: calc(1.5em + .75rem + 2px);
   padding: .375rem .75rem;
   font-size: 1rem;
   font-weight: 400;
@@ -12,9 +12,13 @@
   border: 1px solid #ced4da;
   border-radius: .25rem;
   transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-  &__textarea {
-    height: calc(8em + .75rem + 2px);
-  }
+}
+input {
+  height: calc(1.5em + .75rem + 2px);
+}
+
+textarea {
+  height: calc(8em + .75rem + 2px);
 }
 
 .btn {

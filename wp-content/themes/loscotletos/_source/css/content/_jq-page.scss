@@ -1,34 +1,36 @@
 .jquery_page_grid {
-  font-family: Arial, sans-serif;
   display: grid;
-  grid-template-rows: 25px repeat(2,auto) 25px;
-  grid-template-columns: repeat(3,auto);
-  grid-gap: 25px;
+  grid-template-rows: repeat(2,auto);
+  grid-template-columns: repeat(8, 1fr);
+  grid-gap: 10px;
+}
+.jquery-part {
+  padding: 10px 25px;
 }
 #selectors {
   background-color: rgba(255, 111, 0, 0.36);
   grid-column-start: 1;
-  grid-column-end: 4;
-  grid-row-start: 2;
-  grid-row-end: 3;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 2;
 }
 #events {
   background-color: rgba(3, 169, 244, 0.4);
-  grid-column-start: 4;
-  grid-column-end: 6;
-  grid-row-start: 2;
-  grid-row-end: 3;
+  grid-column-start: 6;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end: 2;
 }
 #traversing {
   background-color: rgba(0, 150, 136, 0.4);
-  grid-column-start: 6;
-  grid-column-end: 8;
+  grid-column-start: 1;
+  grid-column-end: 6;
   grid-row-start: 2;
   grid-row-end: 3;
 }
 #effects {
   background-color: rgba(139, 195, 74, 0.4);
-  grid-column-start: 8;
+  grid-column-start: 6;
   grid-column-end: 9;
   grid-row-start: 2;
   grid-row-end: 3;
@@ -36,35 +38,35 @@
 #manipulation {
   background-color: rgba(178, 223, 219, 0.4);
   grid-column-start: 1;
-  grid-column-end: 3;
+  grid-column-end: 6;
   grid-row-start: 3;
   grid-row-end: 4;
 }
 #iajax {
   background-color: rgba(248, 187, 208, 0.4);
-  grid-column-start: 3;
-  grid-column-end: 4;
+  grid-column-start: 6;
+  grid-column-end: 9;
   grid-row-start: 3;
   grid-row-end: 4;
 }
 #callbacks {
   background-color: rgba(56, 142, 60, 0.41);
-  grid-column-start: 4;
+  grid-column-start: 1;
   grid-column-end: 5;
-  grid-row-start: 3;
-  grid-row-end: 4;
+  grid-row-start: 4;
+  grid-row-end: 5;
 }
 #icore {
   background-color: rgba(0, 151, 167, 0.41);
   grid-column-start: 5;
-  grid-column-end: 7;
-  grid-row-start: 3;
-  grid-row-end: 4;
+  grid-column-end: 9;
+  grid-row-start: 4;
+  grid-row-end: 5;
 }
 #jqueryui {
   background-color: rgba(121, 85, 72, 0.42);
-  grid-column-start: 7;
-  grid-column-end: 8;
-  grid-row-start: 3;
-  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 9;
+  grid-row-start: 5;
+  grid-row-end: 6;
 }

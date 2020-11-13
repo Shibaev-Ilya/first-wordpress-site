@@ -52,6 +52,7 @@ if ( ! function_exists( 'loscotletos_setup' ) ) :
 			array(
 				'header-categories-menu' => esc_html__( 'Header links', 'loscotletos' ),
 				'footer-social-networks-menu' => esc_html__( 'Footer social networks', 'loscotletos' ),
+				'footer-useful-links-menu' => esc_html__( 'Footer useful links', 'loscotletos' ),
 			)
 		);
 
@@ -144,9 +145,14 @@ function loscotletos_scripts() {
 	wp_enqueue_style( 'loscotletos-style', get_stylesheet_uri(), array(), _S_VERSION );
 //	подключаю мой css
 	wp_enqueue_style( 'loscotletos-my-style',get_template_directory_uri() . '/css/style.css');
+    wp_enqueue_style( 'loscotletos-slick-style',get_template_directory_uri() . '/css/slick.css');
 
 	wp_style_add_data( 'loscotletos-style', 'rtl', 'replace' );
 //	подключаю мой js
+    wp_enqueue_script( 'jquery'); // подключаем jquery
+
+    wp_enqueue_script( 'loscotletos-slick-slider', get_template_directory_uri() . '/js/slick.min.js', array(), _S_VERSION, true );
+
 	wp_enqueue_script( 'loscotletos-js', get_template_directory_uri() . '/js/bundle.min.js', array(), _S_VERSION, true );
 
 	wp_enqueue_script( 'loscotletos-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );

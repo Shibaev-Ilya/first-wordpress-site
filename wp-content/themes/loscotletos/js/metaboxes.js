@@ -26,7 +26,7 @@ jQuery(document).ready(function ($) {
 	});
 	// Wrap date picker in class to narrow the scope of jQuery UI CSS and prevent conflicts
 	$("#ui-datepicker-div").wrap('<div class="ale_element" />');
-	
+
 	/**
 	 * Initialize color picker
 	 */
