@@ -5,7 +5,7 @@
   }
 
   &__main_column {
-    width: 60%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     row-gap: 50px;
@@ -18,17 +18,27 @@
   }
 
   &__sidebar {
-    width: 40%;
+    min-width: 400px;
     @media (max-width: 1024px) {
+      min-width: initial;
       width: 100%;
       padding: 0;
     }
+    &__title {
+      text-align: center;
+      margin-bottom: 25px;
+      font-size: 1.4em;
+      font-weight: 600;
+    }
   }
 
-  .preview_card__text {
-    padding: 25px;
+  .preview_card {
+    min-height: 600px;
     &__text {
-      margin-top: 0;
+      padding: 25px;
+      &__text {
+        margin-top: 0;
+      }
     }
   }
 

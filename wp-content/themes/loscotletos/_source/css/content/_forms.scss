@@ -1,0 +1,47 @@
+.lc-contacts-input {
+  display: block;
+  width: calc(100% - 26px);
+  height: calc(1.5em + .75rem + 2px);
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: $secondary-text-color;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  &__textarea {
+    height: calc(8em + .75rem + 2px);
+  }
+}
+
+.btn {
+  width: 100%;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  padding: .5rem 1rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  border-radius: .3rem;
+  cursor: pointer;
+  color: #fff;
+  background-color: #1cb3e8;
+  border: 0;
+  &:hover {
+    background-color: #55c4ef;
+  }
+}
+/* Remove outline on the forms and links */
+:active, :hover, :focus {
+  outline: 0;
+  outline-offset: 0;
+}
