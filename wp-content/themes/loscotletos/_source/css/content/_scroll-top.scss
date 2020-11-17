@@ -1,0 +1,28 @@
+.js-scroll-to-top {
+  display: none;
+  background-color: $primary-color;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  margin: 30px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s;
+  z-index: 1000;
+  color: $color_white;
+  font-size: 1.5em;
+  line-height: 50px;
+}
+.js-scroll-to-top:hover {
+  cursor: pointer;
+  background-color: $primary-color-dark;
+}
+.js-scroll-to-top:active {
+  background-color: $primary-color-dark;
+}
+
+.show {
+  display: inline-block;
+}

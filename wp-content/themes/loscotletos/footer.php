@@ -37,7 +37,7 @@ $main_title = $redux_loscotletos['lc-header-title'];
         ?>
     </footer>
 </div><!-- #page -->
-
+<a class="js-scroll-to-top">&#9650;</a>
 <?php wp_footer(); ?>
 
 </body>

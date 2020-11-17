@@ -586,7 +586,7 @@ function aletheme_metaboxes($meta_boxes) {
 	$meta_boxes[] = array(
 		'id'         => 'contact_metaboxes',
 		'title'      => 'Settings for Contact Page',
-		'pages'      => array( 'page', ), // Post type
+		'pages'      => array( 'page', 'post', ), // Post type
 		'context'    => 'normal',
 		'priority'   => 'high',
 		'show_names' => true, // Show field names on the left
@@ -614,6 +614,13 @@ function aletheme_metaboxes($meta_boxes) {
 				'std'  => '',
 				'type' => 'text',
 			),
+            array(
+                'name' => __('Image link','aletheme'),
+                'desc' => __('Paste your Image link','aletheme'),
+                'id'   => $prefix . 'image',
+                'std'  => '',
+                'type' => 'text',
+            ),
 
             /*array(
                 'name' => __('Email','aletheme'),

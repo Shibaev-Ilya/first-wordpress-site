@@ -219,3 +219,4 @@ require get_template_directory() . '/inc/breadcrumbs.php';
  * Metaboxes
  */
 require get_template_directory() . '/inc/metaboxes.php';
+require get_template_directory() . '/inc/metaboxes-my.php';
