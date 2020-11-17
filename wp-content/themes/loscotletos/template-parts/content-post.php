@@ -45,10 +45,10 @@
             );
             ?>
         </div>
-<!--        <div class="preview_card__text__buttons">-->
-<!--            <a href="--><?php //echo esc_url(get_permalink()) ?><!--" rel="bookmark">-->
-<!--                Read more <img class="arrow" src="--><?php //echo get_template_directory_uri() ?><!--/img/style/arrow.svg" width="15" height="10" alt="">-->
-<!--            </a>-->
-<!--        </div>-->
+        <div class="preview_card__text__buttons">
+            <a href="<?php echo esc_url(get_permalink()) ?>" rel="bookmark">
+                Read more <img class="arrow" src="<?php echo get_template_directory_uri() ?>/img/style/arrow.svg" width="15" height="10" alt="">
+            </a>
+        </div>
     </div>
 </div>

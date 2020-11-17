@@ -60,3 +60,27 @@ function lc_post_type_chunks() {
 }
 
 add_action( 'init', 'lc_post_type_chunks' );
+
+/**
+ * Register a private 'Skill' taxonomy for post type 'chunk'.
+ *
+ * @see register_post_type() for registering post types.
+ */
+function lc_register_custom_taxonomy() {
+    $args = array(
+        'label'        => __( 'Skill', 'textdomain' ),
+        'public'       => true,
+        'rewrite'      => false,
+        'hierarchical' => true
+    );
+    $args_time = array(
+        'label'        => __( 'Time', 'textdomain' ),
+        'public'       => true,
+        'rewrite'      => false,
+        'hierarchical' => true
+    );
+
+    register_taxonomy( 'skill', 'chunk', $args );
+    register_taxonomy( 'spend-time', 'chunk', $args_time );
+}
+add_action( 'init', 'lc_register_custom_taxonomy', 0 );

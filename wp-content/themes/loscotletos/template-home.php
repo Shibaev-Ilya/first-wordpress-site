@@ -16,25 +16,24 @@ get_header();
                          src="<?php echo get_template_directory_uri() ?>/img/slider/1.jpg" alt="loscotletos">
                 </div>
                 <div class="main-slider__item">
-                    <img data-lazy="<?php echo get_template_directory_uri() ?>/img/slider/1.jpg"
+                    <img data-lazy="<?php echo get_template_directory_uri() ?>/img/slider/2.jpg"
                          src="<?php echo get_template_directory_uri() ?>/img/slider/2.jpg" alt="loscotletos">
                 </div>
                 <div class="main-slider__item">
-                    <img data-lazy="<?php echo get_template_directory_uri() ?>/img/slider/1.jpg"
+                    <img data-lazy="<?php echo get_template_directory_uri() ?>/img/slider/3.jpg"
                          src="<?php echo get_template_directory_uri() ?>/img/slider/3.jpg" alt="loscotletos">
                 </div>
                 <div class="main-slider__item">
-                    <img data-lazy="<?php echo get_template_directory_uri() ?>/img/slider/1.jpg"
+                    <img data-lazy="<?php echo get_template_directory_uri() ?>/img/slider/4.jpg"
                          src="<?php echo get_template_directory_uri() ?>/img/slider/4.jpg" alt="loscotletos">
                 </div>
                 <div class="main-slider__item">
-                    <img data-lazy="<?php echo get_template_directory_uri() ?>/img/slider/1.jpg"
+                    <img data-lazy="<?php echo get_template_directory_uri() ?>/img/slider/5.jpg"
                          src="<?php echo get_template_directory_uri() ?>/img/slider/5.jpg" alt="loscotletos">
                 </div>
             </div>
         </div>
-        <div>
-            <div class="main-page__wrapper">
+        <div class="main-page__wrapper">
                 <section class="main_column">
                     <?php
                     // параметры по умолчанию
@@ -98,7 +97,6 @@ get_header();
                 <?php get_sidebar(); ?>
 
             </div>
-        </div><!-- #main -->
     </main>
 <?php
 get_footer();
