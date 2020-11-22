@@ -10,19 +10,19 @@
 get_header();
 ?>
 
-	<main>
+    <main>
         <section>
-            <h3><?php echo get_breadcrumbs(); ?></h3>
-        <?php
-        while ( have_posts() ) :
-            the_post();
+            <?php echo get_breadcrumbs(); ?>
+            <?php
+            while (have_posts()) :
+                the_post();
 
-            get_template_part( 'template-parts/content' );
+                get_template_part('template-parts/content');
 
-        endwhile; // End of the loop.
-        ?>
+            endwhile; // End of the loop.
+            ?>
         </section>
-	</main><!-- #main -->
+    </main><!-- #main -->
 
 <?php
 get_footer();

@@ -12,7 +12,7 @@ function get_breadcrumbs() {
 	$show_on_home   = 0;
 	$show_home_link = 1;
 	$show_title     = 1;
-	$delimiter      = '<span>/</span>';
+	$delimiter      = '<span> &#8250; </span>';
 	$before         = '<span class="current">';
 	$after          = '</span>';
 

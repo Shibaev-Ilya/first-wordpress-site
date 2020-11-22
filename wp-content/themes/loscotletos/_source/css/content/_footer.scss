@@ -14,6 +14,12 @@ footer {
   &__title {
     font-family: $font_accent;
     margin-right: 25px;
+    @media (max-width: 600px) {
+      margin-bottom: 25px;
+    }
+  }
+  @media (max-width: 600px) {
+    flex-direction: column;
   }
 }
 ul.footer__social, ul.footer__useful-links {
@@ -39,6 +45,9 @@ ul.footer__social, ul.footer__useful-links {
 ul.footer__useful-links {
   flex-direction: column;
   margin: 0 25px;
+  @media (max-width: 500px) {
+    margin: 0;
+  }
   li {
     text-transform: initial;
     font-family: $font_accent;
@@ -51,7 +60,7 @@ ul.footer__useful-links {
     }
     @media (max-width: 500px) {
       font-size: 0.9em;
-      margin: 20px 15px;
+      margin: 5px 15px;
     }
   }
 }

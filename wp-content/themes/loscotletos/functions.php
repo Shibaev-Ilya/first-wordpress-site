@@ -164,9 +164,10 @@ function loscotletos_scripts() {
 add_action( 'wp_enqueue_scripts', 'loscotletos_scripts' );
 
 function ale_add_scripts($hook) {
-    wp_enqueue_script( 'aletheme_metaboxes',  get_template_directory_uri(). '/js/metaboxes.js', array( 'jquery', 'jquery-ui-core', 'jquery-ui-datepicker', 'media-upload', 'thickbox') );
+    if( $hook == 'page.php' || $hook == 'new-page.php' || $hook == 'new-post.php' || $hook == 'post.php') {
+        wp_enqueue_script('aletheme_metaboxes', get_template_directory_uri() . '/js/metaboxes.js', array('jquery', 'jquery-ui-core', 'jquery-ui-datepicker', 'media-upload', 'thickbox'));
+    }
 }
-
 add_action( 'admin_enqueue_scripts', 'ale_add_scripts', 10 );
 
 /**
