@@ -16,7 +16,6 @@ get_header();
 ?>
 
 	<main>
-        <h3>Это index.php</h3>
         <div class="main-page__wrapper">
             <section class="main_column">
 

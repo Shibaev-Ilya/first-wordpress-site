@@ -16,7 +16,6 @@ get_header();
 ?>
 
 	<main>
-        <h3>Это page.php -> Pages</h3>
         <div class="main-page__wrapper">
             <section class="main_column">
                 <?php

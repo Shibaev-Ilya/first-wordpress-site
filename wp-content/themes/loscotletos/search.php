@@ -11,7 +11,6 @@ get_header();
 ?>
 
     <main>
-        <h3>Это search.php</h3>
         <div class="main-page__wrapper">
             <section class="main_column">
                 <?php if (have_posts()) : ?>

@@ -1,26 +1,24 @@
 .js-scroll-to-top {
   display: none;
-  background-color: $primary-color;
-  width: 50px;
-  height: 50px;
+  border: 1px solid $secondary-text-color;
+  padding: 10px 15px;
   text-align: center;
-  border-radius: 4px;
   margin: 30px;
   position: fixed;
   bottom: 30px;
   right: 30px;
   transition: background-color .3s;
   z-index: 1000;
-  color: $color_white;
-  font-size: 1.5em;
-  line-height: 50px;
+  font-size: 1em;
+  color: $secondary-text-color;
+  border-radius: 10px;
+  background-color: $color_white;
 }
+
 .js-scroll-to-top:hover {
   cursor: pointer;
-  background-color: $primary-color-dark;
-}
-.js-scroll-to-top:active {
-  background-color: $primary-color-dark;
+  color: #434343;
+  box-shadow: 0 0 20px 0 #c7c7c7;
 }
 
 .show {

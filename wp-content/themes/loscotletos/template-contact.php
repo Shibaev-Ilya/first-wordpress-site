@@ -37,7 +37,7 @@ get_header();
             <section class="contacts__form widget-area">
                 <div class="preview_card">
                     <div class="preview_card__text">
-                        <div class="contacts__form__title">Форма обратной связи</div>
+                        <div class="contacts__form__title">FEEDBACK FORM</div>
                         <?php
                         $contacts_form = get_post_meta(get_the_ID(), 'ale_formcode', true);
                         echo do_shortcode($contacts_form);

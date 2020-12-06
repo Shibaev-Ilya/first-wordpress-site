@@ -19,6 +19,34 @@ body, a {
 .container_sticky {
   position: sticky;
   top: 25px;
+
+  ul * {
+    transition: .4s linear;
+  }
+  ul {
+    list-style-type: circle;
+    list-style-position: inside;
+    padding: 0 10px;
+    margin: 0;
+  }
+  li {
+    margin-bottom: 10px;
+    &:hover a {
+      color: $primary-text-color;
+    }
+  }
+  a {
+    text-decoration: none;
+    color: #555;
+  }
+  section {
+    margin-bottom: 30px;
+  }
+  .widget-title {
+    font-family: $font_accent;
+    font-weight: normal;
+    text-transform: uppercase;
+  }
 }
 .breadcrumb {
   margin-bottom: 25px;
