@@ -9,20 +9,42 @@ header {
   grid-row-end: 2;
   border-bottom: 1px solid $color_black;
 }
-.header_title {
-  margin: 0 auto;
-  text-align: center;
-  h1 {
-    font-family: $font_accent;
-    font-size: 3em;
-    line-height: 1em;
+.header__top {
+  margin: 30px 15px 15px;
+  display: flex;
+  justify-content: space-between;
+  &__title {
+    margin: 0;
+    text-align: center;
+    h1 {
+      margin: 0;
+      font-family: $font_accent;
+      font-size: 3em;
+      line-height: 1em;
+    }
   }
 }
+ul.header__lang-menu {
+  padding: 0;
+  margin: 15px 0;
+  display: flex;
+  justify-content: flex-end;
+  li {
+    font-size: 0.8em;
+    list-style: none;
+    margin-left: 15px;
+    text-transform: uppercase;
+  }
+  li.current-lang {
+    border-bottom: 1px solid black;
+  }
+}
+
 ul.header_nav {
   margin: 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 10px 0;
   border-bottom: 1px solid $color_black;
   border-top: 1px solid $color_black;

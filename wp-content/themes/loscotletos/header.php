@@ -28,22 +28,6 @@ $main_title = $redux_loscotletos['lc-header-title'];
     <!--<link rel="manifest" href="site.webmanifest">
     <link rel="apple-touch-icon" href="icon.png">
     <link type="text/plain" rel="author" href="<?php /*echo get_template_directory() */?>humans.txt">-->
-
-    <!-- Yandex.Metrika counter -->
-    <script type="text/javascript" >
-        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-            m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-
-        ym(69474052, "init", {
-            clickmap:true,
-            trackLinks:true,
-            accurateTrackBounce:true
-        });
-    </script>
-    <noscript><div><img src="https://mc.yandex.ru/watch/69474052" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-    <!-- /Yandex.Metrika counter -->
-
 	<?php wp_head(); ?>
 </head>
 
@@ -52,15 +36,29 @@ $main_title = $redux_loscotletos['lc-header-title'];
 
 <div id="page" class="main_page_wrapper main_page_wrapper_main_page container">
     <header>
-        <div class="header_title">
-            <?php if($main_title) { ?>
-                 <a href="<?php echo home_url("/") ?>"><h1 class="glitch" data-text="<?= $main_title ?>"><?= $main_title ?></h1></a>
-            <?php } else { ?>
-                <a href="<?php echo home_url("/") ?>"><h1 class="glitch" data-text="sorry, we dot have title">sorry, we dot have title</h1></a>
-            <?php }
-//                вызов формы поиска из файла searchform.php
-//                echo get_search_form();
-            ?>
+        <div class="header__top">
+            <div class="header__top__title">
+                <?php if($main_title) { ?>
+                     <a href="<?php echo home_url("/") ?>"><h1 class="glitch" data-text="<?= $main_title ?>"><?= $main_title ?></h1></a>
+                <?php } else { ?>
+                    <a href="<?php echo home_url("/") ?>"><h1 class="glitch" data-text="sorry, we dot have title">sorry, we dot have title</h1></a>
+                <?php }
+                ?>
+            </div>
+            <div class="header__top__tools">
+                <?php
+                //  вызов формы поиска из файла searchform.php
+                echo get_search_form();
+
+                wp_nav_menu(
+                array(
+                'theme_location' => 'lang-menu-header',
+                'container' => 'ul',
+                'menu_class' => 'header__lang-menu',
+                )
+                );
+                ?>
+            </div>
         </div>
         <?php
         wp_nav_menu(
