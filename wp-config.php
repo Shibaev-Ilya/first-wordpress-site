@@ -37,6 +37,10 @@ define( 'DB_CHARSET', 'utf8mb4' );
 /** The Database Collate type. Don't change this if in doubt. */
 define( 'DB_COLLATE', '' );
 
+/*define( 'DB_NAME', 'ce00700_cotleta' );
+define( 'DB_USER', 'ce00700_cotleta' );
+define( 'DB_PASSWORD', 'fsizMi3R' );*/
+
 /**#@+
  * Authentication Unique Keys and Salts.
  *

@@ -10,8 +10,10 @@ get_header();
 ?>
     <main>
         <div class="main-slider">
-            <img data-lazy="<?php echo get_template_directory_uri() ?>/img/slider/main.jpg"
-                 src="<?php echo get_template_directory_uri() ?>/img/slider/main.jpg" alt="loscotletos">
+            <picture>
+                <source srcset="<?php echo get_template_directory_uri() ?>/img/slider/main-xs.jpg" media="(max-width: 768px)">
+                <img src="<?php echo get_template_directory_uri() ?>/img/slider/main.jpg" alt="2d">
+            </picture>
         </div>
         <div class="main-page__wrapper">
                 <section class="main_column">
