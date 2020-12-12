@@ -205,11 +205,6 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 require get_template_directory() . '/inc/post-types.php';
 
 /**
- * Framework Redux options file.
- */
-require get_template_directory() . '/inc/redux-config.php';
-
-/**
  * Breadcrumbs function (хлебные крошки)
  */
 require get_template_directory() . '/inc/breadcrumbs.php';

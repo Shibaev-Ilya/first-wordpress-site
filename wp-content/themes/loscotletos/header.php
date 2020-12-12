@@ -8,10 +8,6 @@
  *
  * @package loscotletos
  */
-
-global $redux_loscotletos;
-$main_title = $redux_loscotletos['lc-header-title'];
-
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
@@ -38,12 +34,7 @@ $main_title = $redux_loscotletos['lc-header-title'];
     <header>
         <div class="header__top">
             <div class="header__top__title">
-                <?php if($main_title) { ?>
-                     <a href="<?php echo home_url("/") ?>"><h1 class="glitch" data-text="<?= $main_title ?>"><?= $main_title ?></h1></a>
-                <?php } else { ?>
-                    <a href="<?php echo home_url("/") ?>"><h1 class="glitch" data-text="sorry, we dot have title">sorry, we dot have title</h1></a>
-                <?php }
-                ?>
+                <a href="<?php echo home_url("/") ?>"><h1 class="glitch" data-text="Celanpatrium">Celanpatrium</h1></a>
             </div>
             <div class="header__top__tools">
                 <?php

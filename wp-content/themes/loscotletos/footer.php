@@ -8,14 +8,10 @@
  *
  * @package loscotletos
  */
-
-global $redux_loscotletos;
-$main_title = $redux_loscotletos['lc-header-title'];
-
 ?>
     <footer>
         <div class="footer__info">
-            <p class="footer__info__title"><?= $main_title ?></p>
+            <span class="footer__info__title">Celanpatrium</span>
             <?php
             wp_nav_menu(
                 array(

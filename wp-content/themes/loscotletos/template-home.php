@@ -3,9 +3,6 @@
  * Template name: Home page
  */
 
-global $redux_loscotletos;
-$phone = $redux_loscotletos['lc-phone'];
-$email = $redux_loscotletos['lc-email'];
 get_header();
 ?>
     <main>

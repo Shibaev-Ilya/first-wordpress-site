@@ -2,9 +2,6 @@
 /**
  * Template name: Contact Template
  */
-global $redux_loscotletos;
-$phone = $redux_loscotletos['lc-phone'];
-$email = $redux_loscotletos['lc-email'];
 get_header();
 ?>
     <main class="contacts">
@@ -28,8 +25,8 @@ get_header();
                         <!--                            </div>-->
                         <div class="preview_card__text__text">
                             <?php the_content(); ?>
-                            <p>Телефон: <?php echo $phone; ?></p>
-                            <p>Email: <?php echo $email; ?></p>
+                            <p>Телефон: +7 777 777 77 77</p>
+                            <p>Email: email@example.com</p>
                         </div>
                     </div>
                 </div>
