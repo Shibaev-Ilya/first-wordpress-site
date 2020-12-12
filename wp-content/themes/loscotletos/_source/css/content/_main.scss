@@ -1,13 +1,19 @@
 body, a {
   color: $primary-text-color;
 }
+figure {
+  margin: 1.5em 0;
+}
+p {
+  margin: 1em 0;
+}
+.wp-block-image {
+  margin: 0;
+}
 .container {
   max-width: 1024px;
   margin: 0 auto;
   padding: 0 25px;
-  @media (max-width: 500px) {
-    padding: 0 20px;
-  }
 }
 
 .main_page_wrapper {

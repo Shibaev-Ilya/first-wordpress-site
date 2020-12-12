@@ -11,14 +11,7 @@
 
 <div class="preview_card" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <div class="preview_card__img">
-        <?php
-        $href = get_post_meta(get_the_ID(), 'img', true);
-        if ($href) { ?>
-            <img src="<?php echo $href ?>" width="900" height="506" alt="">
-        <?php } else { ?>
-            <img src="<?php echo get_template_directory_uri() ?>/img/banners/home-prew.jpg" width="900" height="506" alt="">
-        <?php }
-        ?>
+        <?php echo get_the_post_thumbnail( get_the_ID(), 'full');?>
     </div>
     <div class="preview_card__text">
         <div class="preview_card__text__title">
