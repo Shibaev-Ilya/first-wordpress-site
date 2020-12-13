@@ -8,13 +8,14 @@ header {
   grid-row-start: 1;
   grid-row-end: 2;
   border-bottom: 1px solid $color_black;
+  margin-bottom: 25px;
 }
 .header__top {
-  margin: 30px 15px 15px;
+  margin: 20px 15px 20px;
   display: flex;
   justify-content: space-between;
   &__title {
-    margin: 15px 0;
+    margin: 20px 0;
     text-align: center;
     h1 {
       margin: 0;
@@ -27,12 +28,13 @@ header {
     }
   }
   @media (max-width: 600px) {
+    margin: 20px 0 20px;
     flex-direction: column;
   }
 }
 ul.header__lang-menu {
   padding: 0;
-  margin: 15px 0;
+  margin: 20px 0 0;
   display: flex;
   justify-content: flex-end;
   li {
