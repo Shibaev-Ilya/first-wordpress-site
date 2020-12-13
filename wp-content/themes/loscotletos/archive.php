@@ -11,9 +11,6 @@ get_header();
 ?>
 
     <main>
-        <?php
-        the_archive_title('<h1 class="main-page-title">', '</h1>');
-        ?>
         <div class="main-page__wrapper">
             <section class="main_column">
                 <?php if (have_posts()) : ?>
